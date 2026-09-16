@@ -35,4 +35,7 @@ smr2
 - [] añadir imagenes
 - [] terminar el proyecto
 - [] publicarlo 
+`git status`
+```python print("hola mundo")```
+
 
