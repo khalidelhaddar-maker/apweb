@@ -1,0 +1,108 @@
+<html>
+
+<head>
+
+</head>
+
+<body>
+    <h2>formulario_basico</h2>
+
+    <form action="mailto:keha49@educa.madrid.org" method="post">
+        <fieldset>
+            <legend>Personaje</legend>
+            <label>Pais</label>
+            <br>
+            <select id="name" name="pais">
+                <option value="">Seleciona uno</option>
+                <option value="es">España</option>
+                <option value="mr">Marruecos</option>
+            </select>
+
+            <br>
+            <br>
+
+
+
+            <label>Superheroe favorito:</label>
+            <br>
+            <input list="superheroe" name="superheroe" placeholder="goku" />
+            <datalist id="superheroe">
+                <option label="Goku" value="Goku"></option>
+                <option label="Vegeta" value="Vegeta"></option>
+                <option label="Gohan" value="Gohan"></option>
+            </datalist>
+
+            <br>
+            <br>
+
+
+            <label>color</label>
+            <br>
+            <input name="color" type="color" />
+
+            <br>
+            <br>
+
+
+            
+
+        </fieldset>
+        <fieldset>
+            <legend>Datos Contacto</legend>
+
+
+            <label>Nombre</label>
+            <br>
+            <input name="Nombre" type="text" />
+            <br>
+            <br>
+
+            <label>Telefono</label>
+            <br>
+            <input num="Numero" type="tel" />
+            <br>
+            <br>
+
+            <label>Fecha</label>
+            <br>
+            <input Date="Fecha" type="Date" />
+
+            <br>
+            <br>
+
+            <label>Contraseña</label>
+            <br>
+            <input name="password" type="password" />
+
+            <br>
+            <br>
+
+        </fieldset>
+        <fieldset>
+            <legend>Descenso a segunda</legend>
+            <input type="radio" name="Descenso_segunda" value="Malaga" />
+            <label>Malaga</label>
+            <input type="radio" name="Descenso_segunda" value="Elche" />
+            <label>Elche</label>
+            <input type="radio" name="Descenso_segunda" value="Valencia" />
+            <label>Valencia</label>
+
+
+        </fieldset>
+        <fieldset>
+            <legend>Champions</legend>
+            <input type="checkbox" name="Entra_champions" value="Betis"/>
+            <label>Betis</label>
+            <input type="checkbox" name="Entra_champions" value="Atletico de Madrid"/>
+            <label>Atletico de Madrid</label>
+            <input type="checkbox" name="Entra_champions" value="Real Sociedad"/>
+            <label>Real Sociedad</label>
+        </fieldset>
+        <br>
+        <br>
+
+        <input type="submit" value="enviar" />
+        <input type="reset" value="Borrar todo" />
+</body>
+
+</html>
