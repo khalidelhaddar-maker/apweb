@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Prueba de estilos css externo</title>
+        <link rel="stylesheet" href="prueba_css.css"/>
+        <style>
+            p {
+                background-color: blue;
+                font-family:Arial, 'Courier New', Courier, monospace; /* tipo de la fuente 
+                font-size: large; /*tamaño de la fuente*/
+                font-style: italic; /*cursiva*/
+                font-weight: bold; /*grosor de la fuente*/
+                color: yellow; /*color de la fuente*/
+                
+
+            }
+            .importante{
+                background-color: red;
+            }
+
+            #tercerp{
+                background-color: green;
+            }
+        </style>
+    </head>
+    <body>
+        <p>Primer parrafo</p>
+        <P class="importante">Segundo parrafo</P>
+        <P id="tercerp">Tercer parrafo</P> 
+        <div class="importante">
+            aaaaaaaaaaa
+            <p>Cuarto parrafo</p>
+        </div>
+    </body>
+</html>
