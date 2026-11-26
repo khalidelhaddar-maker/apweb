@@ -101,7 +101,7 @@
 <body>
     <fieldset>
         <legend>Datos de contacto</legend>
-        
+
 
         <lebel>Nombre y apellidos *</lebel>
         <br>
@@ -132,25 +132,143 @@
         <input name="Adjuntar CV en PDF" type="file">
 
 
-        
+
 
 
 
     </fieldset>
 
     <fieldset>
-         <legend>Motivo del Contacto</legend>
-            <label></label>
-            <br>
-            <select id="name" name="pais">
-                <option value="">Seleciona uno</option>
-                <option value="es">España</option>
-                <option value="mr">Marruecos</option>
+        <legend>Motivo del Contacto</legend>
+        <label>Motivo del Contaco</label>
+        <select id="motivo" name="motivo" required>
+            <option value="">Selecciona un motivo</option>
+            <option value="Prácticas">Oferta de prácticas</option>
+            <option value="Empleo">Oferta de Empleo</option>
+            <option value="Información">Solicitud de información</option>
+            <option value="Entrevista">Entrevista</option>
+            <option value="Otros">Otros motivos</option>
+        </select>
+    </fieldset>
+
+    <fieldset>
+        <lebel for="area">Área profesional de interés</lebel>
+
+        <input type="text" id="area" name="area" list="areas-profesioanles"
+            placeholder="Escribe o seleciona un área profesional" required>
+
+        <datalist id="areas-profesionales">
+            <option value="Administración de sistemas"></option>
+            <option value="Redes informáticas"></option>
+            <option value="Desarrollo web"></option>
+            <option value="Ciberseguridad"></option>
+            <option value="Soporte técnico"></option>
+        </datalist>
     </fieldset>
 
 
-        
-   
+    <form action="#" method="post">
+
+        <fieldset>
+            <legend>Datos de contacto</legend>
+
+            <label for="nombre">Nombre:</label>
+            <input type="text" id="nombre" name="nombre" required>
+
+            <br><br>
+
+            <label for="email">Correo electrónico:</label>
+            <input type="email" id="email" name="email" required>
+
+            <br><br>
+
+            <label for="telefono">Teléfono:</label>
+            <input type="tel" id="telefono" name="telefono">
+
+            <br><br>
+
+            <label for="motivo">Motivo del contacto:</label>
+            <select id="motivo" name="motivo" required>
+                <option value="">Selecciona un motivo</option>
+                <option value="practicas">Oferta de prácticas</option>
+                <option value="empleo">Oferta de empleo</option>
+                <option value="informacion">Solicitud de información</option>
+                <option value="entrevista">Entrevista</option>
+                <option value="otros">Otros motivos</option>
+            </select>
+
+            <br><br>
+
+            <label for="area">Área profesional de interés:</label>
+            <input type="text" id="area" name="area" list="areas-profesionales">
+
+            <datalist id="areas-profesionales">
+                <option value="Administración de sistemas">
+                <option value="Redes informáticas">
+                <option value="Desarrollo web">
+                <option value="Ciberseguridad">
+                <option value="Soporte técnico">
+            </datalist>
+        </fieldset>
+
+        <fieldset>
+            <legend>Medio de contacto preferido</legend>
+
+            <input type="radio" id="correo" name="medio-contacto" value="correo" requiered>
+            <label for="correo">Correo electrónico</label>
+
+            <br>
+
+            <input type="radio" id="telefono" name="medio-contacto" value="telefono">
+            <label for="telefono">Teléfono</label>
+        </fieldset>
+
+        <fieldset>
+            <legend>Autorización de contacto</legend>
+
+            <input type="checkbox" id="autorizacion" name="autorizacion" required>
+
+            <label for="autorizacion">
+                Autorizo que se utilicen los datos facilitados
+                para responder a esta solicitud.
+            </label>
+        </fieldset>
+
+        <br>
+
+
+
+        <br>
+
+        <fieldset>
+            <legend>Mensaje</legend>
+
+            <label for="mensaje">Escribe tu mensaje:</label>
+            <br>
+
+            <textarea id="mensaje" name="mensaje" rows="6" cols="50"
+                placeholder="Escribe aquí tu mensaje..."></textarea>
+        </fieldset>
+
+        <br>
+
+        <input type="submit" value="Enviar formulario">
+        <input type="reset" value="Limpiar formulario">
+
+    </form>
+
+    <br>
+
+    <nav>
+        <a href="index.html">Volver a la página principal</a>
+        <br>
+        <a href="pagina2.html">Volver a la segunda página</a>
+    </nav>
+
+
+
+
+
 </body>
 
 </html>
